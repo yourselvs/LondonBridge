@@ -20,9 +20,9 @@ const Settings: React.FC = () => {
     <p>
       Add new email:
       <br />
-      <input value='inputVal' onChange={(e) => setInputVal(e.target.value)} />
+      <input value={inputVal} onChange={(e) => setInputVal(e.target.value)} />
       <button onClick={() => {
-        emails.push(inputVal);
+        setEmails([...emails,inputVal]);
         setInputVal('');
       }}>
         Add
