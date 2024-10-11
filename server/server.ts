@@ -8,9 +8,9 @@ const morgan = require('morgan');
 // app.use('/dist', express.static(path.join(__dirname, 'dist')));
 // app.use(morgan('dev')) // logging
 app.use(express.static(path.join(__dirname, '../client/build')));
-app.use((req, res) => {
-    res.status(200).send('Hello, world!');
-});
+// app.use((req, res) => {
+//     res.status(200).send('Hello, world!');
+// });
 
 //Main App Route
 // app.get('/', (req, res, next) => res.sendFile(path.join(__dirname, 'public/index.html')));
